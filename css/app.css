@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(185, 41%, 84%);
+}
+
+html{
+    font-family: 'Space Mono', monospace;
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15% auto;
+}
+
+.calculator-holder{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top:15px;
+    border-radius: 5px;
+    padding:25px;
+    width:920px;
+}
+
+.bill-input{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    padding: 10px 25px;
+    margin-right:20px;
+}
+
+.tip-buttons
+{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tip-amount{
+    width:117px;
+    height: 48px;
+    padding:10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    background-color:hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+}
+
+.tip-amount:hover,.reset:hover{
+    cursor: pointer;
+    background-color: #9FE8DF;
+    color:hsl(183, 100%, 15%);
+}
+
+.active
+{
+    background-color: #26C2AE;
+    color: hsl(183, 100%, 15%);
+}
+
+#custom-tip{
+    width:117px;
+    height:48px;
+    text-align: right;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border:none;
+    background-color: #F3F9FA;
+    color: hsl(183, 100%, 15%);
+} 
+
+.numPeople{
+    display:flex;
+    flex-direction: column;
+}
+
+#bill{
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+    -moz-appearance: textfield;
+    
+}
+
+#people{
+    background-image: url(/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+}
+ 
+#people,#bill{
+    padding:5px 15px;
+    font-size:24px;
+    font-weight: bold;
+    text-align: right;
+    border:none;
+    border-radius: 5px;
+    width:100%;
+    font-family: 'Space Mono', monospace;
+    background-color: #F3F9FA;
+    color:hsl(183, 100%, 15%);
+}
+
+#people:focus, #bill:focus, #custom-tip:focus {
+    border:2px solid #26C2AE;
+    outline: none;
+}
+
+.input-label
+{
+    font-size: 16px;
+    font-weight: bold;
+    color:#5E7A7D;
+}
+
+.people-text{
+    display: flex;
+    justify-content: space-between;
+    color:#E17457;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.bill-results
+{
+    background-color: #00474B;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:30px;
+    height: 100%;
+    width:50%;
+    border-radius: 10px;
+}
+
+.amount-per-person
+{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.label-header{
+    
+    color:hsl(189, 41%, 97%);
+}
+
+.label-p{
+    color:hsl(185, 41%, 84%);
+}
+
+.total-per-person
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.result{
+    font-size: 48px;
+    color:#26C2AE;
+}
+
+.reset
+{
+     background-color: #26C2AE;
+     color: hsl(183, 100%, 15%);
+     border:none;
+     align-self: center;
+     width: 90%;
+     text-transform: uppercase;
+     font-size: 20px;
+     font-weight: bold;
+     letter-spacing: 1px;
+     border-radius: 5px;
+     padding: 10px;
+     
+}
+
+.disabled{
+    background-color: #0D686D;
+}
+
+.disabled:hover
+{
+    background-color:#0D686D;
+    cursor:default;
+}
+
+
+.display-fields
+{
+    margin-bottom: 65px;
+}
+
+@media (max-width:900px)
+{
+    .calculator-holder
+    {
+        flex-direction: column;
+        width:100%;
+    }
+
+    .bill-input
+    {
+        width:100%;
+    }
+
+    .bill-results
+    {
+        width:100%;
+    }
+
+
+}

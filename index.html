@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/app.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  <main>
+    <img class="logo" src="/images/logo.svg" alt="Splitter logo">
+    <section class="calculator-holder">
+      <section class="bill-input">
+        <label class="input-label" for="bill">Bill</label>
+        <input type="number" name="bill" id="bill" placeholder="0" >
+
+        <section class="tip">
+          <p class="input-label">Select Tip %</p>
+          <div class="tip-buttons">
+            <button class="tip-amount" id="5" onclick="setTip(5)">
+              5%
+            </button>
+  
+            <button class="tip-amount" id="10" onclick="setTip(10)">
+              10%
+            </button>
+  
+            <button class="tip-amount" id="15" onclick="setTip(15)">
+              15%
+            </button>
+  
+            <button class="tip-amount" id="25" onclick="setTip(25)">
+              25%
+            </button>
+  
+            <button class="tip-amount" id="50" onclick="setTip(50)">
+              50%
+            </button>
+            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom" onchange="setCustomTip()">
+          </div>
+          
+        </section>
+
+        <section class="numPeople">
+          <div class="people-text">
+            <label class="input-label" for="people">Number of People</label>
+            <p class="error"></p>
+          </div>
+          <input type="text" name="people" id="people" placeholder="0" onchange="calcGratuity()">
+        </section>
+      </section>
+      
+      <section class="bill-results">
+        <div class="display-fields">
+          <section class="amount-per-person">
+            <div class="tip-label">
+              <h1 class="label-header">Tip Amount</h1>
+              <p class="label-p">/ person</p>
+            </div>
+            <div class="tip-result">
+              <h1 class="result">$<span id="tip-per-person">0.00</span></h1>
+            </div>
+          </section>
+  
+          <section class="total-per-person">
+            <div class="total-label">
+              <h1 class="label-header">Total</h1>
+              <p class="label-p">/ person</p>
+            </div>
+            <div class="total-result">
+              <h1 class="result"> $<span id="per-person-cost">0.00</span></h1>
+            </div>
+          </section>
+        </div>
+        
+
+        <button id="resetBtn" class="reset" onclick="reset()">Reset</button>
+        
+      </section>
+    </section>
+  </main>
+
+<script src="/js/app.js"></script> 
+</body>
+</html>
