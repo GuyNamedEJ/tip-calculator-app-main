@@ -29,9 +29,10 @@ main{
     justify-content: center;
     background-color: white;
     margin-top:15px;
-    border-radius: 5px;
+    border-radius: 15px;
     padding:25px;
     width:920px;
+    height: 481px;
 }
 
 .bill-input{
