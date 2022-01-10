@@ -20,7 +20,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 15% auto;
+    margin: 10% auto;
 }
 
 .calculator-holder{
@@ -28,7 +28,7 @@ main{
     align-items: center;
     justify-content: center;
     background-color: white;
-    margin-top:87px;
+    margin-top:50px;
     border-radius: 15px;
     padding:25px;
     width:920px;
