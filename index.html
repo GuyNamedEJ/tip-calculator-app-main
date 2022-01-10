@@ -18,31 +18,31 @@
     <section class="calculator-holder">
       <section class="bill-input">
         <label class="input-label" for="bill">Bill</label>
-        <input type="number" name="bill" id="bill" placeholder="0" >
+        <input type="number" name="bill" id="bill" placeholder="0" autocomplete="off" >
 
         <section class="tip">
           <p class="input-label">Select Tip %</p>
           <div class="tip-buttons">
-            <button class="tip-amount" id="5" onclick="setTip(5)">
+            <button class="tip-amount" value="5">
               5%
             </button>
   
-            <button class="tip-amount" id="10" onclick="setTip(10)">
+            <button class="tip-amount" value="10">
               10%
             </button>
   
-            <button class="tip-amount" id="15" onclick="setTip(15)">
+            <button class="tip-amount"  value="15">
               15%
             </button>
   
-            <button class="tip-amount" id="25" onclick="setTip(25)">
+            <button class="tip-amount" value="25">
               25%
             </button>
   
-            <button class="tip-amount" id="50" onclick="setTip(50)">
+            <button class="tip-amount" value="50">
               50%
             </button>
-            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom" onchange="setCustomTip()">
+            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom"  autocomplete="off">
           </div>
           
         </section>
@@ -50,9 +50,9 @@
         <section class="numPeople">
           <div class="people-text">
             <label class="input-label" for="people">Number of People</label>
-            <p class="error"></p>
+            <p id="error"></p>
           </div>
-          <input type="text" name="people" id="people" placeholder="0" onchange="calcGratuity()">
+          <input type="text" name="people" id="people" placeholder="0" autocomplete="off">
         </section>
       </section>
       

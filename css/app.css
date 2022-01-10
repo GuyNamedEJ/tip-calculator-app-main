@@ -208,10 +208,13 @@ main{
     cursor:default;
 }
 
-
 .display-fields
 {
     margin-bottom: 65px;
+}
+
+#error{
+    color:red;
 }
 
 @media (max-width:900px)
