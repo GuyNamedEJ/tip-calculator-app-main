@@ -13,11 +13,6 @@ for (let i = 0; i < tipButtons.length; i++) {
   tipButtons[i].addEventListener("click", setTip);
 }
 
-function setCustomTip()
-{
-    
-}
-
 function setTip() {
     let tipButton = this;
 
@@ -91,10 +86,22 @@ function calcTotalPerPerson()
 
 function calcGratuity()
 {
+    if(numPeople.value == 0)
+    {
+        errorMessage.innerHTML = "Can't be 0";
+    }
+    else
+    {
+        errorMessage.innerHTML = " ";
+    }
     tipPerPersonDisplay.innerHTML = calcTipPerPerson();
     totalPerPersonDisplay.innerHTML = calcTotalPerPerson();
 }
 
+function reset()
+{
+    window.location.reload();
+}
 
 
 

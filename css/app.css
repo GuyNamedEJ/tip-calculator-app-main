@@ -214,7 +214,7 @@ main{
 }
 
 #error{
-    color:red;
+    color:#E17457;
 }
 
 @media (max-width:900px)
