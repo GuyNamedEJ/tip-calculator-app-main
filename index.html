@@ -18,7 +18,7 @@
     <section class="calculator-holder">
       <section class="bill-input">
         <label class="input-label" for="bill">Bill</label>
-        <input type="number" name="bill" id="bill" placeholder="0" autocomplete="off" >
+        <input type="number" name="bill" id="bill" placeholder="0" autocomplete="off">
 
         <section class="tip">
           <p class="input-label">Select Tip %</p>
@@ -42,7 +42,7 @@
             <button class="tip-amount" value="50">
               50%
             </button>
-            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom"  autocomplete="off">
+            <input type="number" name="custom-tip" id="custom-tip" placeholder="Custom"  autocomplete="off">
           </div>
           
         </section>
@@ -52,7 +52,7 @@
             <label class="input-label" for="people">Number of People</label>
             <p id="error"></p>
           </div>
-          <input type="text" name="people" id="people" placeholder="0" autocomplete="off">
+          <input type="number" name="people" id="people" placeholder="0" autocomplete="off" min="1" max="99999">
         </section>
       </section>
       
