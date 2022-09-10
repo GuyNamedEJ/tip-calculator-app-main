@@ -4,7 +4,7 @@
 
 ## The challenge
 
-[Click Here](https://fylo-landing-page-dark-theme-six.vercel.app/) to view my live solution to this challange
+[Click Here](https://tip-calculator-app-main-jade.vercel.app/) to view my live solution to this challange
 
 The challenge was to build out this tip calculator app and get it looking as close to the design as possible.
 
