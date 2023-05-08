@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip calculator app
 
-![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Tip calculator app coding challenge](https://github.com/GuyNamedEJ/GuyNamedEJ/raw/main/splitter-prev.gif)
 
 ## The challenge
 
