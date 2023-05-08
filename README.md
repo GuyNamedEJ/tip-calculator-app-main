@@ -1,4 +1,4 @@
-# Frontend Mentor - Tip calculator app
+# Splitter - Tip calculator <a href="https://tip-calculator-app-main-jade.vercel.app/">View App</a>
 
 ![Design preview for the Tip calculator app coding challenge](https://github.com/GuyNamedEJ/GuyNamedEJ/raw/main/splitter-prev.gif)
 
