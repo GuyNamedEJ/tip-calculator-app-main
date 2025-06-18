@@ -33,15 +33,6 @@ A simple JavaScript app that calculates how much tip each person should pay when
 
 ---
 
-## 🧠 Next Improvements
-
-- Improve mobile responsiveness
-- Add light/dark theme toggle
-- Save user inputs using localStorage
-- Add animations for a smoother UI experience
-
----
-
 ## 🧪 Try It Yourself
 
 [View it live](https://tip-calculator-app-main-jade.vercel.app/) <!-- (Add link if deployed with GitHub Pages) -->
