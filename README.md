@@ -2,6 +2,8 @@
 
 A simple JavaScript app that calculates how much tip each person should pay when splitting a bill. Great for practicing basic DOM manipulation, event handling, and math operations in JavaScript.
 
+![screenshot](https://raw.githubusercontent.com/GuyNamedEJ/GuyNamedEJ/main/splitter-prev.gif)
+
 ---
 
 ## 📌 Features
